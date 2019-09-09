@@ -1,33 +1,46 @@
-.App {
-  text-align: center;
+.progress-bar {
+	margin: 20px 20%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.progress-bar .value > div {
+	text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.progress-bar .scale .graduation {
+	text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.progress-bar .bar > div {
+	display: inline-block;
+	height: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress-bar .bar > div:first-of-type {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.progress-bar .bar > div:last-of-type {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.progress-bar .legend {
+	text-align: center;
+}
+
+.progress-bar .legend > div {
+	display: inline-block;
+	margin: 0 5px;
+	text-align: center;
+}
+
+.progress-bar .legend > div .dot {
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.progress-bar .legend > div .label {
+	margin-left: 2px;
+	vertical-align: middle;
 }
